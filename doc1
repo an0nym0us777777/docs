@@ -1,12 +1,18 @@
 import { useState, useEffect } from "react";
 import { getNFTsForCollection } from "../api/nftApi";
 import "./Gallery.css";
+import Modal from 'react-modal';
+import metamaskLogo from '../images/metamask.png';
+import Web3 from "web3";
+
 
 const Gallery = () => {
     const [currentPage, setCurrentPage] = useState(0);
     const [nftsPerPage, setNftsPerPage] = useState(20);
     const [nfts, setNfts] = useState([]);
     const [filters, setFilters] = useState({});
+    const [selectedNFT, setSelectedNFT] = useState(null);
+    const [connectedAddress, setConnectedAddress] = useState(null);
 
     const handleScroll = (event) => {
         const { scrollTop, clientHeight, scrollHeight } = event.currentTarget;
@@ -26,11 +32,9 @@ const Gallery = () => {
         });
     }, [currentPage, filters, nftsPerPage]);
 
-
     const getGemLink = (collectionAddress, tokenId) => {
         return `https://www.gem.xyz/asset/${collectionAddress}/${tokenId}`;
     };
-
 
     const handleFilterChange = (filter, value) => {
         // Update filters object with new value
@@ -57,67 +61,141 @@ const Gallery = () => {
         return match;
     });
 
-
-    const openNFTModal = (nft) => {
-        // Add Gem link to NFT object
-        nft.gemLink = getGemLink(nft.asset_contract.address, nft.token_id);
-
-        // Open modal to display NFT details
-        // You can implement this using a library like react-modal or by creating your own custom modal component
+    const connectToMetaMask = async () => {
+        // Vérifier si MetaMask est installé
+        if (window.ethereum) {
+            // Créer une instance Web3
+            const web3 = new Web3(window.ethereum);
+            try {
+                // Demander la permission de se connecter au compte MetaMask
+                await window.ethereum.request({ method: 'eth_requestAccounts' });
+                console.log('Connected to MetaMask');
+                // Mettre à jour votre état pour refléter que l'utilisateur est connecté
+                setConnectedAddress(window.ethereum.selectedAddress);
+            } catch (error) {
+                console.error('Error connecting to MetaMask:', error);
+            }
+        } else {
+            console.error('MetaMask not installed');
+        }
     };
 
-
-    return (
-        <div className="page">
+    const disconnectFromMetaMask = async () => {
+      // Vérifier si MetaMask est installé
+      if (window.ethereum) {
+          // Créer une instance Web3
+          const web3 = new Web3(window.ethereum);
+          try {
+              // Demander la déconnexion du compte MetaMask
+              await window.ethereum.request({ method: 'wallet_requestPermissions', params: [{ eth_accounts: {} }] });
+              console.log('Disconnected from MetaMask');
+              // Mettre à jour votre état pour refléter que l'utilisateur est déconnecté
+              setConnectedAddress(null);
+          } catch (error) {
+              console.error('Error disconnecting from MetaMask:', error);
+          }
+      } else {
+          console.error('MetaMask not installed');
+      }
+  };
+  
+  const openNFTModal = (nft) => {
+      // Add Gem link to NFT object
+      nft.gemLink = getGemLink(nft.asset_contract.address, nft.token_id);
+  
+      // Open modal to display NFT details
+      setSelectedNFT(nft);
+  };
+  
+  const closeModal = () => {
+      setSelectedNFT(null);
+  }
+  
+  return (
+      <div className="page">
           <h2>Gallery</h2>
-          <div className="filters">
-            <h3>Filters</h3>
-            <ul>
-              <li>
-                <label>
-                  Background:
-                  <select onChange={(e) => handleFilterChange("Background", e.target.value)}>
-                    <option value="">All</option>
-                    <option value="Yellow">Yellow</option>
-                    <option value="Army Green">Army Green</option>
-                    <option value="Aquamarine">Aquamarine</option>
-                    <option value="legendary">Legendary</option>
-                  </select>
-                </label>
-              </li>
-              <li>
-                <label>
-                  Rarity:
-                  <select onChange={(e) => handleFilterChange("rarity", e.target.value)}>
-                    <option value="">All</option>
-                    <option value="common">Common</option>
-                    <option value="uncommon">Uncommon</option>
-                    <option value="rare">Rare</option>
-                    <option value="legendary">Legendary</option>
-                  </select>
-                </label>
-              </li>
-              {/* Add more filters here */}
-            </ul>
-          </div>
-          <div className="nft-grid">
-            {filteredNFTs.map((nft) => (
-              <div key={nft.id} className="nft-item" onClick={() => openNFTModal(nft)}>
-                <img src={nft.image_url} alt={nft.name} />
-                <div className="nft-details">
-                  <span>#{nft.token_id}</span>
-                  <button class="gem-link-btn" onClick={() => window.open(nft.gemLink, '_blank')}>
-                    <img src="https://www.gem.xyz/assets/gem.png" alt="Gem icon" />
-                    <span>See on Gem.xyz</span>
-                  </button>
-                  {/* Add more NFT details here */}
-                </div>
+          {connectedAddress ? (
+              <div className="metamask-connected">
+                  <div className="connected-address">
+                      <span>{`${connectedAddress.slice(0, 5)}...${connectedAddress.slice(-3)}`}</span>
+                  </div>
+                  <div className="disconnect-btn" onClick={disconnectFromMetaMask}>
+                      <span>Disconnect</span>
+                  </div>
               </div>
-            ))}
+          ) : (
+              <button className="connect-btn" onClick={connectToMetaMask}>
+                  <img src={metamaskLogo} alt="MetaMask logo" className="metamask-logo" />
+                  <span>Connect to MetaMask</span>
+              </button>
+          )}
+          <div className="filters">
+              <h3>Filters</h3>
+              <ul>
+                  <li>
+                      <label>
+                          Background:
+                          <select onChange={(e) => handleFilterChange("Background", e.target.value)}>
+                              <option value="">All</option>
+                              <option value="Yellow">Yellow</option>
+                              <option value="Army Green">Army Green</option>
+                              <option value="Aquamarine">Aquamarine</option>
+                              <option value="legendary">Legendary</option>
+                          </select>
+                      </label>
+                  </li>
+                  <li>
+                      <label>
+                          Rarity:
+                          <select onChange={(e) => handleFilterChange("rarity", e.target.value)}>
+                              <option value="">All</option>
+                              <option value="common">Common</option>
+                              <option value="uncommon">Uncommon</option>
+                              <option value="rare">Rare</option>
+                              <option value="legendary">Legendary</option>
+                          </select>
+                      </label>
+                  </li>
+                  {/* Add more filters here */}
+              </ul>
           </div>
-        </div>
-      );
-      
+          <div className="nft-grid" onScroll={handleScroll}>
+              {filteredNFTs.map((nft) => (
+                  <div key={nft.id} className="nft-item" onClick={() => openNFTModal(nft)}>
+                      <img src={nft.image_url} alt={nft.name} />
+                      <div className="nft-details">
+                          <span>#{nft.token_id}</span>
+                          <button className="gem-link-btn" onClick={() => window.open(nft.gemLink, '_blank')}>
+                          <img src="https://d1iczm3wxxz9zd.cloudfront.net/white-gem.svg" alt="Gem icon" />
+                          <span>Gem</span>
+                      </button>
+                  </div>
+              </div>
+          ))}
+      </div>
+      <Modal
+          isOpen={selectedNFT !== null}
+          onRequestClose={closeModal}
+          contentLabel="NFT details"
+      >
+          {selectedNFT && (
+              <div>
+                  <img src={selectedNFT.image_url} alt={selectedNFT.name} />
+                  <h3>{selectedNFT.name}</h3>
+                  <p>#{selectedNFT.token_id}</p>
+                  <p>Background: {selectedNFT.traits.find((trait) => trait.trait_type === "Background")?.value}</p>
+                  <p>Rarity: {selectedNFT.traits.find((trait) => trait.trait_type === "rarity")?.value}</p>
+                  <button className="gem-link-btn" onClick={() => window.open(selectedNFT.gemLink, '_blank')}>
+                      <img src="https://d1iczm3wxxz9zd.cloudfront.net/white-gem.svg" alt="Gem icon" />
+                      <span>Gem</span>
+                  </button>
+              </div>
+          )}
+      </Modal>
+  </div>
+
+);
 };
 
 export default Gallery;
+       
