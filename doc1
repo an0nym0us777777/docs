@@ -1,1 +1,123 @@
-<div class="overflow-y-scroll pb-28 px-4 lg:px-0 pt-6 hide-scrollbar lg:max-h-[calc(100vh-11.5rem)] "><label for="toogleA" class="flex w-full py-3 border-b  border-opacity-10  items-center cursor-pointer border-black"><div class="font-600 text-yellow-600 flex items-center relative text-xs uppercase text-black"><div class="grid grid-cols-1 w-7 mr-2"><img alt="" srcset="/_next/image?url=%2Fgoldbean.png&amp;w=64&amp;q=75 1x" src="/_next/image?url=%2Fgoldbean.png&amp;w=64&amp;q=75" width="28" height="28" decoding="async" data-nimg="future" class="overlay-item duration-300 opacity-0" loading="lazy" style="color: transparent;"><video class="overlay-item  opacity-100 duration-700" loop="" autoplay="" playsinline=""><source src="/filtericons/Golden.mp4" type="video/mp4"></video></div><span class="goldentext">Golden Mode</span></div><div class="relative ml-auto pr-1"><input id="toogleA" type="checkbox" class="sr-only"><div class="w-10 h-4 duration-300 rounded-full shadow-inner bg-gray-200"></div><div class="dot bg-azukired absolute w-6 h-6 bg-white rounded-full shadow -left-1 -top-1 transition"></div></div></label><label for="searchbyid" class="flex  w-full py-3 focus:border-red-300 focus-within:border-b-black border-b relative border-opacity-10  items-center border-black"><img alt="" srcset="/_next/image?url=%2Ffiltericons%2FBlack%2FSearch.png&amp;w=64&amp;q=75 1x" src="/_next/image?url=%2Ffiltericons%2FBlack%2FSearch.png&amp;w=64&amp;q=75" width="28" height="28" decoding="async" data-nimg="future" class="w-7 h-7 mr-2 " loading="lazy" style="color: transparent;"><input placeholder="Sort by serial..." id="searchbyid" type="text" class="h-full text-sm w-full z-10 focus:outline-none active:outline-none border-0 border-none bg-transparent text-black" value=""></label><label for="toogleB" class="flex w-full py-5 border-b border-opacity-10  items-center cursor-pointer hidden border-black"><div class="font-600 flex items-center relative text-xs uppercase text-black">Use High Res</div><div class="relative ml-auto pr-1"><div class="w-10 h-4 bg-gray-300 rounded-full shadow-inner"></div><div class="dot checked:bg-gray-400 bg-azukired absolute w-6 h-6 bg-white rounded-full shadow -left-1 -top-1 transition"></div></div></label><label for="toogleC" class="flex w-full py-5 border-b border-opacity-10 items-center cursor-pointer hidden"><div class="font-600 flex items-center relative text-xs uppercase text-black">Sort by serial...</div><div class="relative ml-auto pr-1"><input id="toogleC" type="checkbox" class="sr-only"><div class="w-10 h-4 bg-gray-300 rounded-full shadow-inner"></div><div class="dot checked:bg-gray-400 bg-azukired absolute w-6 h-6 bg-white rounded-full shadow -left-1 -top-1 transition"></div></div></label><div class="border-b border-opacity-10  py-0 border-black opacity-100"><h3 class="flow-root"><button class="w-full py-3 flex items-center justify-between text-sm hover:opacity-80" id="headlessui-disclosure-button-6" type="button" aria-expanded="false"><span class="font-600 flex items-center relative text-xs uppercase "><img alt="" srcset="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FType.png&amp;w=64&amp;q=75 1x" src="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FType.png&amp;w=64&amp;q=75" width="28" height="28" decoding="async" data-nimg="future" class="w-7 h-7 mr-2" loading="lazy" style="color: transparent;">Type </span><span class="ml-6 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg></span></button></h3></div><div class="border-b border-opacity-10  py-0 border-black opacity-100"><h3 class="flow-root"><button class="w-full py-3 flex items-center justify-between text-sm hover:opacity-80" id="headlessui-disclosure-button-8" type="button" aria-expanded="true" aria-controls="headlessui-disclosure-panel-9"><span class="font-600 flex items-center relative text-xs uppercase "><img alt="" srcset="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FSpecial.png&amp;w=64&amp;q=75 1x" src="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FSpecial.png&amp;w=64&amp;q=75" width="28" height="28" decoding="async" data-nimg="future" class="w-7 h-7 mr-2" loading="lazy" style="color: transparent;">Special </span><span class="ml-6 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg></span></button></h3><div class="pt-0 pb-4 lg:max-h-80 galleryscroll lg:overflow-y-scroll" id="headlessui-disclosure-panel-9"><input class="w-full bg-transparent duration-300 text-sm p-2 mb-2 lg:w-search border focus:outline-none   focus:border-black" placeholder="Search..." type="text" value=""><div class="space-y-0"><div class="flex px-2 items-center galleryinput"><input id="filter-Special-0" name="Special[]" type="checkbox" class="h-4 w-4 border-gray-300 rounded text-indigo-600 focus:ring-indigo-500" value="Fireflies"><label for="filter-Special-0" class="ml-2 uppercase font-mono text-xs pt-2 pb-1.5 opacity-80 w-full cursor-pointer h-full"> Fireflies <span class="opacity-50">(88)</span></label></div><div class="flex px-2 items-center galleryinput"><input id="filter-Special-1" name="Special[]" type="checkbox" class="h-4 w-4 border-gray-300 rounded text-indigo-600 focus:ring-indigo-500" value="Butterfly"><label for="filter-Special-1" class="ml-2 uppercase font-mono text-xs pt-2 pb-1.5 opacity-80 w-full cursor-pointer h-full"> Butterfly <span class="opacity-50">(86)</span></label></div><div class="flex px-2 items-center galleryinput"><input id="filter-Special-2" name="Special[]" type="checkbox" class="h-4 w-4 border-gray-300 rounded text-indigo-600 focus:ring-indigo-500" value="Fox Fire"><label for="filter-Special-2" class="ml-2 uppercase font-mono text-xs pt-2 pb-1.5 opacity-80 w-full cursor-pointer h-full"> Fox Fire <span class="opacity-50">(86)</span></label></div><div class="flex px-2 items-center galleryinput"><input id="filter-Special-3" name="Special[]" type="checkbox" class="h-4 w-4 border-gray-300 rounded text-indigo-600 focus:ring-indigo-500" value="Smoke"><label for="filter-Special-3" class="ml-2 uppercase font-mono text-xs pt-2 pb-1.5 opacity-80 w-full cursor-pointer h-full"> Smoke <span class="opacity-50">(81)</span></label></div><div class="flex px-2 items-center galleryinput"><input id="filter-Special-4" name="Special[]" type="checkbox" class="h-4 w-4 border-gray-300 rounded text-indigo-600 focus:ring-indigo-500" value="Sakura"><label for="filter-Special-4" class="ml-2 uppercase font-mono text-xs pt-2 pb-1.5 opacity-80 w-full cursor-pointer h-full"> Sakura <span class="opacity-50">(80)</span></label></div><div class="flex px-2 items-center galleryinput"><input id="filter-Special-5" name="Special[]" type="checkbox" class="h-4 w-4 border-gray-300 rounded text-indigo-600 focus:ring-indigo-500" value="Fire"><label for="filter-Special-5" class="ml-2 uppercase font-mono text-xs pt-2 pb-1.5 opacity-80 w-full cursor-pointer h-full"> Fire <span class="opacity-50">(58)</span></label></div><div class="flex px-2 items-center galleryinput"><input id="filter-Special-6" name="Special[]" type="checkbox" class="h-4 w-4 border-gray-300 rounded text-indigo-600 focus:ring-indigo-500" value="Earth"><label for="filter-Special-6" class="ml-2 uppercase font-mono text-xs pt-2 pb-1.5 opacity-80 w-full cursor-pointer h-full"> Earth <span class="opacity-50">(53)</span></label></div><div class="flex px-2 items-center galleryinput"><input id="filter-Special-7" name="Special[]" type="checkbox" class="h-4 w-4 border-gray-300 rounded text-indigo-600 focus:ring-indigo-500" value="Water"><label for="filter-Special-7" class="ml-2 uppercase font-mono text-xs pt-2 pb-1.5 opacity-80 w-full cursor-pointer h-full"> Water <span class="opacity-50">(49)</span></label></div><div class="flex px-2 items-center galleryinput"><input id="filter-Special-8" name="Special[]" type="checkbox" class="h-4 w-4 border-gray-300 rounded text-indigo-600 focus:ring-indigo-500" value="Lightning"><label for="filter-Special-8" class="ml-2 uppercase font-mono text-xs pt-2 pb-1.5 opacity-80 w-full cursor-pointer h-full"> Lightning <span class="opacity-50">(48)</span></label></div></div></div></div><div class="border-b border-opacity-10  py-0 border-black opacity-100"><h3 class="flow-root"><button class="w-full py-3 flex items-center justify-between text-sm hover:opacity-80" id="headlessui-disclosure-button-10" type="button" aria-expanded="false"><span class="font-600 flex items-center relative text-xs uppercase "><img alt="" srcset="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FClothing.png&amp;w=64&amp;q=75 1x" src="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FClothing.png&amp;w=64&amp;q=75" width="28" height="28" decoding="async" data-nimg="future" class="w-7 h-7 mr-2" loading="lazy" style="color: transparent;">Clothing </span><span class="ml-6 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg></span></button></h3></div><div class="border-b border-opacity-10  py-0 border-black opacity-100"><h3 class="flow-root"><button class="w-full py-3 flex items-center justify-between text-sm hover:opacity-80" id="headlessui-disclosure-button-12" type="button" aria-expanded="false"><span class="font-600 flex items-center relative text-xs uppercase "><img alt="" srcset="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FOffhand.png&amp;w=64&amp;q=75 1x" src="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FOffhand.png&amp;w=64&amp;q=75" width="28" height="28" decoding="async" data-nimg="future" class="w-7 h-7 mr-2" loading="lazy" style="color: transparent;">Offhand </span><span class="ml-6 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg></span></button></h3></div><div class="border-b border-opacity-10  py-0 border-black opacity-100"><h3 class="flow-root"><button class="w-full py-3 flex items-center justify-between text-sm hover:opacity-80" id="headlessui-disclosure-button-14" type="button" aria-expanded="false"><span class="font-600 flex items-center relative text-xs uppercase "><img alt="" srcset="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FHair.png&amp;w=64&amp;q=75 1x" src="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FHair.png&amp;w=64&amp;q=75" width="28" height="28" decoding="async" data-nimg="future" class="w-7 h-7 mr-2" loading="lazy" style="color: transparent;">Hair </span><span class="ml-6 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg></span></button></h3></div><div class="border-b border-opacity-10  py-0 border-black opacity-100"><h3 class="flow-root"><button class="w-full py-3 flex items-center justify-between text-sm hover:opacity-80" id="headlessui-disclosure-button-16" type="button" aria-expanded="false"><span class="font-600 flex items-center relative text-xs uppercase "><img alt="" srcset="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FHeadgear.png&amp;w=64&amp;q=75 1x" src="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FHeadgear.png&amp;w=64&amp;q=75" width="28" height="28" decoding="async" data-nimg="future" class="w-7 h-7 mr-2" loading="lazy" style="color: transparent;">Headgear </span><span class="ml-6 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg></span></button></h3></div><div class="border-b border-opacity-10  py-0 border-black opacity-100"><h3 class="flow-root"><button class="w-full py-3 flex items-center justify-between text-sm hover:opacity-80" id="headlessui-disclosure-button-18" type="button" aria-expanded="false"><span class="font-600 flex items-center relative text-xs uppercase "><img alt="" srcset="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FFace.png&amp;w=64&amp;q=75 1x" src="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FFace.png&amp;w=64&amp;q=75" width="28" height="28" decoding="async" data-nimg="future" class="w-7 h-7 mr-2" loading="lazy" style="color: transparent;">Face </span><span class="ml-6 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg></span></button></h3></div><div class="border-b border-opacity-10  py-0 border-black opacity-100"><h3 class="flow-root"><button class="w-full py-3 flex items-center justify-between text-sm hover:opacity-80" id="headlessui-disclosure-button-20" type="button" aria-expanded="false"><span class="font-600 flex items-center relative text-xs uppercase "><img alt="" srcset="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FNeck.png&amp;w=64&amp;q=75 1x" src="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FNeck.png&amp;w=64&amp;q=75" width="28" height="28" decoding="async" data-nimg="future" class="w-7 h-7 mr-2" loading="lazy" style="color: transparent;">Neck </span><span class="ml-6 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg></span></button></h3></div><div class="border-b border-opacity-10  py-0 border-black opacity-100"><h3 class="flow-root"><button class="w-full py-3 flex items-center justify-between text-sm hover:opacity-80" id="headlessui-disclosure-button-22" type="button" aria-expanded="false"><span class="font-600 flex items-center relative text-xs uppercase "><img alt="" srcset="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FEyes.png&amp;w=64&amp;q=75 1x" src="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FEyes.png&amp;w=64&amp;q=75" width="28" height="28" decoding="async" data-nimg="future" class="w-7 h-7 mr-2" loading="lazy" style="color: transparent;">Eyes </span><span class="ml-6 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg></span></button></h3></div><div class="border-b border-opacity-10  py-0 border-black opacity-100"><h3 class="flow-root"><button class="w-full py-3 flex items-center justify-between text-sm hover:opacity-80" id="headlessui-disclosure-button-24" type="button" aria-expanded="false"><span class="font-600 flex items-center relative text-xs uppercase "><img alt="" srcset="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FMouth.png&amp;w=64&amp;q=75 1x" src="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FMouth.png&amp;w=64&amp;q=75" width="28" height="28" decoding="async" data-nimg="future" class="w-7 h-7 mr-2" loading="lazy" style="color: transparent;">Mouth </span><span class="ml-6 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg></span></button></h3></div><div class="border-b border-opacity-10  py-0 border-black opacity-100"><h3 class="flow-root"><button class="w-full py-3 flex items-center justify-between text-sm hover:opacity-80" id="headlessui-disclosure-button-26" type="button" aria-expanded="false"><span class="font-600 flex items-center relative text-xs uppercase "><img alt="" srcset="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FEar.png&amp;w=64&amp;q=75 1x" src="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FEar.png&amp;w=64&amp;q=75" width="28" height="28" decoding="async" data-nimg="future" class="w-7 h-7 mr-2" loading="lazy" style="color: transparent;">Ear </span><span class="ml-6 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg></span></button></h3></div><div class="border-b border-opacity-10  py-0 border-black opacity-100"><h3 class="flow-root"><button class="w-full py-3 flex items-center justify-between text-sm hover:opacity-80" id="headlessui-disclosure-button-28" type="button" aria-expanded="false"><span class="font-600 flex items-center relative text-xs uppercase "><img alt="" srcset="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FBackground.png&amp;w=64&amp;q=75 1x" src="/_next/image?url=%2Ffiltericons%2FBlack%2F0%2FBackground.png&amp;w=64&amp;q=75" width="28" height="28" decoding="async" data-nimg="future" class="w-7 h-7 mr-2" loading="lazy" style="color: transparent;">Background </span><span class="ml-6 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg></span></button></h3></div></div>
+import { useState, useEffect } from "react";
+import { getNFTsForCollection } from "../api/nftApi";
+import "./Gallery.css";
+
+const Gallery = () => {
+    const [currentPage, setCurrentPage] = useState(0);
+    const [nftsPerPage, setNftsPerPage] = useState(20);
+    const [nfts, setNfts] = useState([]);
+    const [filters, setFilters] = useState({});
+
+    const handleScroll = (event) => {
+        const { scrollTop, clientHeight, scrollHeight } = event.currentTarget;
+
+        if (scrollHeight - scrollTop === clientHeight) {
+            setCurrentPage(currentPage + 1);
+        }
+    };
+
+    useEffect(() => {
+        const collectionSlug = "azuki";
+        const offset = currentPage * nftsPerPage;
+        const limit = nftsPerPage;
+
+        getNFTsForCollection(collectionSlug, filters, offset, limit).then((nfts) => {
+            setNfts(nfts);
+        });
+    }, [currentPage, filters, nftsPerPage]);
+
+
+    const getGemLink = (collectionAddress, tokenId) => {
+        return `https://www.gem.xyz/asset/${collectionAddress}/${tokenId}`;
+    };
+
+
+    const handleFilterChange = (filter, value) => {
+        // Update filters object with new value
+        setFilters({
+            ...filters,
+            [filter]: value,
+        });
+    };
+
+    const filteredNFTs = nfts.filter((nft) => {
+        let match = true;
+
+        Object.entries(filters).forEach(([filter, value]) => {
+            if (value && !nft.traits.find((trait) => trait.trait_type === filter && trait.value.toLowerCase() === value.toLowerCase())) {
+                match = false;
+            } else if (!value) {
+                // If the filter value is empty, do not apply the filter to the NFT
+                return;
+            }
+        });
+
+        console.log(nft, match); // Ajouter cette ligne pour vérifier si les filtres sont appliqués
+
+        return match;
+    });
+
+
+    const openNFTModal = (nft) => {
+        // Add Gem link to NFT object
+        nft.gemLink = getGemLink(nft.asset_contract.address, nft.token_id);
+
+        // Open modal to display NFT details
+        // You can implement this using a library like react-modal or by creating your own custom modal component
+    };
+
+
+    return (
+        <div className="page">
+          <h2>Gallery</h2>
+          <div className="filters">
+            <h3>Filters</h3>
+            <ul>
+              <li>
+                <label>
+                  Background:
+                  <select onChange={(e) => handleFilterChange("Background", e.target.value)}>
+                    <option value="">All</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Army Green">Army Green</option>
+                    <option value="Aquamarine">Aquamarine</option>
+                    <option value="legendary">Legendary</option>
+                  </select>
+                </label>
+              </li>
+              <li>
+                <label>
+                  Rarity:
+                  <select onChange={(e) => handleFilterChange("rarity", e.target.value)}>
+                    <option value="">All</option>
+                    <option value="common">Common</option>
+                    <option value="uncommon">Uncommon</option>
+                    <option value="rare">Rare</option>
+                    <option value="legendary">Legendary</option>
+                  </select>
+                </label>
+              </li>
+              {/* Add more filters here */}
+            </ul>
+          </div>
+          <div className="nft-grid">
+            {filteredNFTs.map((nft) => (
+              <div key={nft.id} className="nft-item" onClick={() => openNFTModal(nft)}>
+                <img src={nft.image_url} alt={nft.name} />
+                <div className="nft-details">
+                  <span>#{nft.token_id}</span>
+                  <button class="gem-link-btn" onClick={() => window.open(nft.gemLink, '_blank')}>
+                    <img src="https://www.gem.xyz/assets/gem.png" alt="Gem icon" />
+                    <span>See on Gem.xyz</span>
+                  </button>
+                  {/* Add more NFT details here */}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+      
+};
+
+export default Gallery;
